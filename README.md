@@ -3,9 +3,7 @@ Meal WP Theme Dev
 ===
 
 This is Meal  wp theme.
-
-
-* Have several features like 
+Have several features like 
 
 ### Food Booking 
 
