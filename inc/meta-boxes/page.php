@@ -2,14 +2,24 @@
 // Control core classes for avoid errors
 if( class_exists( 'CSF' ) ) {
 
-  //
-  // Set a unique slug-like ID
-  $prefix = 'meal_section_picket_metabox';
 
   //
+  // Set a unique slug-like ID
+  $prefix = 'meal_section_picker_metabox';
+
+  // $page_id = 0;
+    // if ( isset( $_REQUEST['post'] ) || isset( $_REQUEST['post_ID'] ) ) {
+    //     $page_id = empty( $_REQUEST['post_ID'] ) ? $_REQUEST['post'] : $_REQUEST['post_ID'];
+    // }
+
+    // $current_page_template = get_post_meta( $page_id, '_wp_page_template', true );
+    // if ( ! in_array( $current_page_template, array( 'page-templates/landing.php' ) ) ) {
+    //     return $metaboxes;
+    // }
+    
+  
   // Create a metabox
   CSF::createMetabox( $prefix, array(
-    'id'=>'meal_page_sections',
     'title'     => __('Sections','meal'),
     'post_type' => 'page',
     'context' => 'normal',
@@ -17,6 +27,7 @@ if( class_exists( 'CSF' ) ) {
     'page_templates' => array('page-templates/landing.php'), // Spesific page templates
 
   ) );
+
 
   //
 //   // Create a section
@@ -34,7 +45,7 @@ if( class_exists( 'CSF' ) ) {
                'accordion_title_prefix'=>__('Add New Section','meal'),
                 'fields'=>array(
                     array(
-                        'id'=>'section_field',
+                        'id'=>'section-field',
                         'title'=>__('Select Sections','meal'),
                         'type'=>'select',
                         'options'=>'post',
@@ -54,6 +65,7 @@ if( class_exists( 'CSF' ) ) {
     
     
   ) );
+
 
 
 

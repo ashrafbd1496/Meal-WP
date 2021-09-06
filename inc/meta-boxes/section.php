@@ -9,7 +9,6 @@ if( class_exists( 'CSF' ) ) {
   //
   // Create a metabox
   CSF::createMetabox( $prefix, array(
-    'id'=>'meal-section-type',
     'title'     => __('Select Section Type','meal'),
     'post_type' => 'section',
     'context' => 'normal',
@@ -20,7 +19,7 @@ if( class_exists( 'CSF' ) ) {
 //   // Create a section
   CSF::createSection( $prefix, array(
      'name'=>'meal-section-one',
-       
+         
         'fields'=>array(
             array(
                 

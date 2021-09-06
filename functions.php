@@ -3,6 +3,7 @@ require_once get_theme_file_path('/lib/csf/codestar-framework.php');
 require_once get_theme_file_path('/inc/meta-boxes/section.php');
 require_once get_theme_file_path('/inc/meta-boxes/page.php');
 require_once get_theme_file_path('/inc/meta-boxes/section-banner.php');
+require_once get_theme_file_path('/inc/meta-boxes/group-select-metabox-practice.php');
 
 if ( site_url() == "http://meal.lwhh.com" ) {
     define( "VERSION", time() );
